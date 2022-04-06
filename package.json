@@ -1,0 +1,8 @@
+{
+  "name": "debug-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:napster99/debug-react.git",
+  "author": "zhangxiaojian <zhangxj@tuya.com>",
+  "license": "MIT"
+}
