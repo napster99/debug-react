@@ -20,6 +20,16 @@ eval("/**\n * @license React\n * react-dom.development.js\n *\n * Copyright (c) 
 
 /***/ }),
 
+/***/ "./node_modules/react-dom/client.js":
+/*!******************************************!*\
+  !*** ./node_modules/react-dom/client.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nvar m = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nif (false) {} else {\n  var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;\n  exports.createRoot = function(c, o) {\n    i.usingClientEntryPoint = true;\n    try {\n      return m.createRoot(c, o);\n    } finally {\n      i.usingClientEntryPoint = false;\n    }\n  };\n  exports.hydrateRoot = function(c, h, o) {\n    i.usingClientEntryPoint = true;\n    try {\n      return m.hydrateRoot(c, h, o);\n    } finally {\n      i.usingClientEntryPoint = false;\n    }\n  };\n}\n\n\n//# sourceURL=webpack://debug-react/./node_modules/react-dom/client.js?");
+
+/***/ }),
+
 /***/ "./node_modules/react-dom/index.js":
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
@@ -76,7 +86,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nexports.__esModule = true;\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nvar Page = function () {\n    return React.createElement(\"h1\", null, \"createRoot\");\n};\nvar container = document.getElementById(\"root\");\nvar root = ReactDOM.createRoot(container);\nroot.render(React.createElement(Page, null), container);\n\n\n//# sourceURL=webpack://debug-react/./src/react18/createRoot.tsx?");
+eval("\nexports.__esModule = true;\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n// https://reactjs.org/docs/react-dom-client.html\n/**\n * @description createRoot(container[, options]);\n * @returns\n */\nvar Page = function () {\n    return React.createElement(\"h1\", null, \"createRoot w\");\n};\nvar container = document.getElementById(\"root\");\nvar root = ReactDOM.createRoot(container);\n// root.render(<Page />);\n// root.render(<span>ssss</span>)\n// root.render(<span>eeee</span>)\n// root.render(<span>wwwww</span>)\n// root.unmount();\n\n\n//# sourceURL=webpack://debug-react/./src/react18/createRoot.tsx?");
 
 /***/ })
 
