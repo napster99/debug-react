@@ -3,7 +3,7 @@ const htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: path.resolve(__dirname, "src/react18/createRoot.tsx"),
+  entry: path.resolve(__dirname, "src/react18/autoBatching.tsx"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
