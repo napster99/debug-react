@@ -59,6 +59,45 @@ const root: ReactDOM.ReactDOMRoot = ReactDOM.createRoot(container);
 
 root.render(<Page />);
 
+
+
+// import React, { lazy, Suspense } from 'react';
+
+// const AvatarComponent = lazy(() => import('./AvatarComponent'));
+// const InfoComponent = lazy(() => import('./InfoComponent'));
+// const MoreInfoComponent = lazy(() => import('./MoreInfoComponent'));
+
+// const renderLoader = () => <p>Loading</p>;
+
+// class ErrorBoundary extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {hasError: false};
+//   }
+
+//   static getDerivedStateFromError(error) {
+//     return {hasError: true};
+//   }
+
+//   render() {
+//     if (this.state.hasError) {
+//       return <p>Loading failed! Please reload.</p>;
+//     }
+
+//     return this.props.children;
+//   }
+// }
+
+// const DetailsComponent = () => (
+//   <ErrorBoundary>
+//     <Suspense fallback={renderLoader()}>
+//       <AvatarComponent />
+//       <InfoComponent />
+//       <MoreInfoComponent />
+//     </Suspense>
+//   </ErrorBoundary>
+// )
+
 declare const Promise;
 // 源码
 // class Suspense extends React.Component {
